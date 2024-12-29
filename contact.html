@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css_files/styles.css">
+    <link rel="stylesheet" href="/css_files/fonts_and_text.css">
+    <link rel="stylesheet" href="/css_files/mobile_styles.css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+<div class="header">
+  <img src="/logo.jpeg" alt="My Logo" class="responsive-logo">
+  <h2 class="gradient-text">Call me maybe?</h2>
+  <h3 class="gradient-text2">or not...</h3>
+</div>
+
+<div id="navbar">
+  <div id="burger-menu" onclick="toggleMenu()">☰</div>
+  <div id="menu-links">
+  <a href="/home_files/home.html">Home</a>
+  <a href="/cv_files/cv.html">CV</a>
+  <a href="/hobbies.html">Hobbies</a>
+  <a class="active" href="contact.html">Contact</a>
+  </div>
+</div>
+<script>
+  function toggleMenu() {
+    console.log("Burger menu clicked");
+    const menu = document.getElementById('menu-links');
+    menu.classList.toggle('show');
+  }
+  </script>
+
+<body>        
+
+    <h3 class="gradient-text3">Here you can send me a message if you're too shy to call me :3</h3>
+    <h2 class="gradient-lines">na beRea ma baiatule ma AS</h2>
+  
+
+    <div class="container">
+      <form action="mailto:manoleandreea2003@icloud.com" method="post" enctype="text/plain">
+      
+    
+ 
+
+
+
+        <label class="gradient-text5" for="fname" style="color:#000000">Surname</label>
+          <input type="text" id="fname" name="firstname" placeholder="You got this! "class="neon-border">      
+        <label class="gradient-text5" for="lname" style="color:#000000">Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Have fun! "class="neon-border">
+        <label class="gradient-text5" for="country" style="color:#000000">Country</label>
+          <select id="country" name="country" class="neon-border">
+            <option value="australia" class="neon-border">Romania</option>
+            <option value="canada" class="neon-border">Rosu-Albastru</option>
+            <option value="usa" class="neon-border">Cainii</option>
+          </select>
+        <label class="gradient-text5" for="subject" style="color:#000000">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Aici scrii ce ai de spus..." style="height:200px" class="neon-border"></textarea>
+          <input type="submit" value="Submit" class="button-style">
+      </form>
+    </div>
+    <br>
+
+
+   
+      <h3 class="gradient-lines">Unde se afla facultatKpFrivirea mai jos..</h3>
+      <h2 class="gradient-text4">i practically live there ;-;</h2>
+      <div id="map"></div>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script>
+        const map = L.map('map').setView([44.43632887478283, 26.04804617803268], 16); 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '© OpenStreetMap'
+        }).addTo(map);
+        const marker = L.marker([44.43632887478283, 26.04804617803268]).addTo(map)
+          .bindPopup('I AM HERE!!')
+          .openPopup();
+      </script>
+ 
+
+        
+</body>
+        
+<footer class="w3-container w3-black w3-center w3-margin-top">
+
+  <p>&copy; 2024 Manole. Toate drepturile rezervate.</p>
+
+</footer>
+
+</html>

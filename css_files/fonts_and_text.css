@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'HoodsonFree';
+    src: url('./hoodson.ttf') format('truetype'), 
+         url('./hoodson.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Vindica';
+    src: url('./Vindica.ttf') format('truetype'), 
+         url('./Vindica.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sloppy';
+    src: url('./fusterd-bonus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sloppymare';
+    src: url('./fusterd-brush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sloppymic';
+    src: url('./fusterd-brush-two.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .gradient-text {
+      font-size: 10em;
+      font-family:'HoodsonFree';
+      color:#f2f2f2;
+      text-align: center; 
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+   
+  }
+  .gradient-lines {
+    font-size: 5em;
+    letter-spacing: 1px;
+    font-family:'Sloppy';
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center; 
+    margin: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .gradient-text2 {
+      font-size: 4em;
+      letter-spacing: 1px;
+      font-family:'Vindica';
+      background: linear-gradient(to right, #ffffff, #00e1ff); 
+      -webkit-background-clip: text; 
+      -webkit-text-fill-color: transparent; 
+      text-align: center; 
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gradient-text3 {
+    font-size: 7em;
+    letter-spacing: 1px;
+    font-family:'Sloppymare';
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center; 
+    margin: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gradient-text4 {
+    font-size: 7em;
+    letter-spacing: 1px;
+    font-family:'Sloppymic';
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center; 
+    margin: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gradient-text5 {
+    font-size: 4em;
+    letter-spacing: 1px;
+    font-family:'Sloppymic';
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center; 
+    margin: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
